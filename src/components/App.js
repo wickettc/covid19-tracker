@@ -15,14 +15,10 @@ function App() {
 
     const mapHandler = (event) => {
         const stateName = stateLabelValues.filter((val) => {
-            if (val.value === event.target.dataset.name) {
-                return val.label;
-            }
+            return val.value === event.target.dataset.name ? val.label : '';
         });
         const toBeDisplayed = stateData.filter((data) => {
-            if (data.state === stateName[0].label) {
-                return data;
-            }
+            return data.state === stateName[0].label ? data : '';
         });
         setDisplayData(toBeDisplayed[0]);
         setShowState(true);
@@ -46,7 +42,7 @@ function App() {
     return (
         <div className="container">
             {loading ? (
-                <div>loading...</div>
+                <div className="loader"></div>
             ) : (
                 <div className="top-container">
                     <USAMap onClick={mapHandler} />
