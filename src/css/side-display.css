@@ -1,0 +1,7 @@
+.side-display-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40vw;
+}

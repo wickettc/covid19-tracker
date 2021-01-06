@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+path {
+    pointer-events: all;
+}
+path:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.top-container {
+    display: flex;
+}
