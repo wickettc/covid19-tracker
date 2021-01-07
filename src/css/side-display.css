@@ -5,3 +5,7 @@
     flex-direction: column;
     width: 40vw;
 }
+
+.side-display-container h1 {
+    text-align: center;
+}
