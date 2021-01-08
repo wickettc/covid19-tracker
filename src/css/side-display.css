@@ -4,8 +4,22 @@
     align-items: center;
     flex-direction: column;
     width: 40vw;
+    margin-right: 25px;
 }
 
 .side-display-container h1 {
     text-align: center;
+}
+
+.chart-and-display-container {
+    border: 1px solid #e0deda;
+    border-radius: 5%;
+    margin: 5px;
+    padding: 10px;
+}
+
+.exit {
+    margin-left: auto;
+    font-size: 2rem;
+    cursor: pointer;
 }

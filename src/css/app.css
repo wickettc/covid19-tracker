@@ -18,9 +18,16 @@ path:hover {
     height: 100vh;
 }
 
+.map {
+    width: 60vw;
+    margin-left: 25px;
+}
+
 .top-container {
     display: flex;
     width: 100vw;
+    justify-content: center;
+    align-items: center;
 }
 
 .loader {

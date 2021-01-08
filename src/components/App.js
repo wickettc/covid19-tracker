@@ -24,6 +24,10 @@ function App() {
         setShowState(true);
     };
 
+    const handleExit = () => {
+        setShowState(false);
+    };
+
     useEffect(() => {
         async function fetchData() {
             const resultUSA = await axios.get(
@@ -45,7 +49,7 @@ function App() {
                 <div className="loader"></div>
             ) : (
                 <div className="top-container">
-                    <USAMap onClick={mapHandler} />
+                    <USAMap className="map" onClick={mapHandler} />
                     {showState ? (
                         <StateDisplay
                             state={displayData.state}
@@ -53,6 +57,7 @@ function App() {
                             active={displayData.active}
                             deaths={displayData.deaths}
                             recovered={displayData.recovered}
+                            handleExit={handleExit}
                         />
                     ) : (
                         <USADisplay
