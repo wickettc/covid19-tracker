@@ -8,14 +8,6 @@ const Chart = ({ state }) => {
     const [cases, setCases] = useState([]);
     const [deaths, setDeaths] = useState([]);
 
-    // const pushCases = async (response) => {
-    //     setCases([]);
-    //     await response.data.forEach((day) => {
-    //         setCases((cases) => [...cases, day.cases]);
-    //     });
-    //     datasets.data = cases;
-    // };
-
     useEffect(() => {
         async function fetchData() {
             const response = await axios.get(
@@ -39,7 +31,6 @@ const Chart = ({ state }) => {
 
     return (
         <div>
-            {console.log(stateData)}
             <Line
                 type="line"
                 data={{

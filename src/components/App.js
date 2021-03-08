@@ -20,7 +20,11 @@ function App() {
         const toBeDisplayed = stateData.filter((data) => {
             return data.state === stateName[0].label ? data : '';
         });
-        setDisplayData(toBeDisplayed[0]);
+        if (toBeDisplayed[0] === 'undefined') {
+            setDisplayData('District Of Columbia');
+        } else {
+            setDisplayData(toBeDisplayed[0]);
+        }
         setShowState(true);
     };
 

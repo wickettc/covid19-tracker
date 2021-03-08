@@ -8,7 +8,7 @@ const stateLabelValues = [
     { label: 'Colorado', value: 'CO' },
     { label: 'Connecticut', value: 'CT' },
     { label: 'Delaware', value: 'DE' },
-    { label: 'District of Columbia', value: 'DC' },
+    { label: 'District Of Columbia', value: 'DC' },
     { label: 'States of Micronesia', value: 'FM' },
     { label: 'Florida', value: 'FL' },
     { label: 'Georgia', value: 'GA' },
